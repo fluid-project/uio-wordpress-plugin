@@ -1,36 +1,37 @@
+/*
+Copyright 2015 OCAD University
 
- // Investigate whether or not WordPress Widgets could help with this
- // Concern regarding Widgets: Placement within the DOM
- $(document).ready(function () {
+Licensed under the Educational Community License (ECL), Version 2.0 or the New
+BSD license. You may not use this file except in compliance with one these
+Licenses.
 
-    // Add the sliding panel template to the page
-    $(phpData.uioTemplateSelector).prepend(
-    "        <!-- BEGIN markup for Preference Editor -->" +
-    "        <div class='flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel'>" +
-    "            <!-- This is the div that will contain the Preference Editor component -->" +
-    "            <div class='flc-slidingPanel-panel flc-prefsEditor-iframe'></div>" +
-    
-    "            <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->" +
-    "            <div class='fl-panelBar'>" +
-    "                <span class='fl-prefsEditor-buttons'>" +
-    "                    <button id='reset' class='flc-prefsEditor-reset fl-prefsEditor-reset'><span class='fl-icon-undo'></span> Reset</button>" +
-    "                    <button id='show-hide' class='flc-slidingPanel-toggleButton fl-prefsEditor-showHide'> Show/Hide</button>" +
-    "                </span>" +
-    "            </div>" +
-    "        </div>" +
-    "        <!-- END markup for Preference Editor -->"
-    );
+You may obtain a copy of the ECL 2.0 License and BSD License at
+https://github.com/fluid-project/infusion/raw/master/Infusion-LICENSE.txt
+*/
 
-    // Add the table of contents placeholder to the page
-    // The location of this should be controlled through the admin interface
-    // Right now, this assumes that a <header>element with the ID 'branding' exists
-    // and is an appropriate place
-    $(phpData.uioTocSelector).prepend("<div class='flc-toc-tocContainer toc'> </div>");
+$(document).ready(function () {
 
-    // Create the prefs editor
-     fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-        "templatePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/html/",
-        "messagePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/messages/",
-        "tocTemplate": phpData.pluginUrl + "lib/infusion/src/components/tableOfContents/html/TableOfContents.html"
+    var tocPlaceholder = "<div class='flc-toc-tocContainer toc'> </div>";
+    var uioTemplateSpec = {
+        uioTemplate : {
+            href : phpData.pluginUrl + "template.html"
+        }
+    };
+
+    // Fetch the template text, and when we have it, proceed
+    fluid.fetchResources(uioTemplateSpec, function (spec) {
+
+        // Add the sliding panel template to the page
+        $(phpData.uioTemplateSelector).prepend(spec.uioTemplate.resourceText);
+
+        // Add the table of contents placeholder to the page
+        $(phpData.uioTocSelector).prepend(tocPlaceholder);
+
+        // Create the prefs editor
+        fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            "templatePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/html/",
+            "messagePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/messages/",
+            "tocTemplate": phpData.pluginUrl + "lib/infusion/src/components/tableOfContents/html/TableOfContents.html"
+        });
     });
 });
