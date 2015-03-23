@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: User Interface Options
- * Plugin URI: http://floeproject.org
+ * Plugin URI: http://github.org/fluid-project/uio-wordpress-plugin
  * Description: Adds the Infusion User Interface Options component to the site
  * Version: 0.1
  * Author: Floe Project

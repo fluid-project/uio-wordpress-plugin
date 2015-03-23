@@ -34,3 +34,7 @@ See http://wiki.fluidproject.org/display/docs/Working+With+A+Preferences+Editor+
 = Are there any themes themes that already work well with UIO? =
 
 The plugin has been tested with the Miranda theme, which responds very nicely.
+
+== Issue Tracker ==
+
+http://issues.fluidproject.org/browse/FLOE/component/11510#selectedTab=com.atlassian.jira.plugin.system.project%3Acomponent-issues-panel

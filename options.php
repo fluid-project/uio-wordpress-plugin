@@ -40,7 +40,7 @@ function page_init()
 
     add_settings_field(
         'uio_template_selector', // ID
-        'Template selector', // Title 
+        'Where should we put <em>UIO</em>?', // Title
         'uio_template_selector_callback', // Callback
         'uio-setting-admin', // Page
         'setting_section_id', // Section 
@@ -49,7 +49,7 @@ function page_init()
 
     add_settings_field(
         'uio_toc_selector', // ID
-        'Table of Contents selector', // Title 
+        'Where should we put the <em>Table of Contents</em>?', // Title
         'uio_toc_selector_callback', // Callback
         'uio-setting-admin', 
         'setting_section_id',
@@ -80,7 +80,9 @@ function uio_toc_selector_callback()
 
 function print_section_info()
 {
-    print 'The User Interface Options component needs to add some markup to the pages. You need to specify where, in your theme, this markup should go.';
+    print '<p>The User Interface Options component needs to add some markup to the pages.
+	You need to specify where, in your theme, this markup should go. The UIO HTML templates
+	will be inserted as the first child of the elements identified by these CSS selectors.</p>';
 }
 
 // Build the settings page
