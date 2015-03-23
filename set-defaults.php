@@ -15,5 +15,5 @@ if ( !get_option('uio_template_selector') ) {
 	update_option( 'uio_template_selector', 'body' );
 }
 if ( !get_option('uio_toc_selector') ) {
-	update_option( 'uio_toc_selector', 'main#main' );
+	update_option( 'uio_toc_selector', '#main' );
 }

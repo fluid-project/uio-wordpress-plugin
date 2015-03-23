@@ -1,6 +1,6 @@
-=== Plugin Name ===
-Contributors: 
-Tags: accessibility
+=== User Interface Options ===
+Contributors: Fluid Project
+Tags: accessibility, personalization
 Requires at least: 4.1.1
 Tested up to: 4.1.1
 License: New BSD license or the Educational Community License, Version 2.0
@@ -16,8 +16,9 @@ presentation of the site to their own personal needs and preferences.
 
 == Installation ==
 
-1. Upload `user-interface-options.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Upload `user-interface-options.zip` to the `/wp-content/plugins/` directory and unpack it.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Use the User Interface Options Settings page to specify where to insert the UIO panel and the table of contents.
 1. Adjust the CSS of your theme to respond nicely to the changes that UIO makes.
 
 == Frequently Asked Questions ==
