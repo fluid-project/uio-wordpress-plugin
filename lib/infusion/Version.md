@@ -1,10 +1,12 @@
 This version of Infusion was created using a custom build from the master branch:
 
-    https://github.com/fluid-project/infusion/
-    commit 18939c0dd614901bfc434a29f880aa332600a239
+https://github.com/fluid-project/infusion/
+commit 18939c0dd614901bfc434a29f880aa332600a239
 
 using the command line:
+```
     grunt custom --source=true --include="uiOptions" --name="uio"
+```
 
 The following directories and files were stripped out of the build, since they contain
 code that is included in the infusion-uio.js file or is not required by this plugin:

@@ -14,6 +14,9 @@ This plugin adds the Infusion User Interface Options (UIO) component to the site
 sliding panel at the top of the page that contains controls which allow visitors to customize the
 presentation of the site to their own personal needs and preferences.
 
+For more information, contact the [Fluid-work mailing list](mailto:fluid-work@fluidproject.org)
+or join the [fluid-work IRC chat room](http://wiki.fluidproject.org/display/fluid/IRC+Channel).
+
 == Installation ==
 
 1. Upload `user-interface-options.zip` to the `/wp-content/plugins/` directory and unpack it.
@@ -25,11 +28,12 @@ presentation of the site to their own personal needs and preferences.
 
 = What is the development status of the UIO plugin? =
 
-This plugin is still in very, very early development.
+This plugin is still in early development.
 
-= How do I "adjust the CSS of my theme to respond nicely to the changes that UIO makes?" =
+= How do I "adjust the CSS of my theme to respond nicely to the changes that UIO makes"? =
 
-See http://wiki.fluidproject.org/display/docs/Working+With+A+Preferences+Editor+On+Your+Site for tips on styling your site to work nicely with UIO.
+See http://wiki.fluidproject.org/display/docs/Working+With+A+Preferences+Editor+On+Your+Site
+for tips on styling your site to work nicely with UIO.
 
 = Are there any themes themes that already work well with UIO? =
 
