@@ -9,11 +9,10 @@ Licenses.
 You may obtain a copy of the ECL 2.0 License and BSD License at
 https://github.com/fluid-project/infusion/raw/master/Infusion-LICENSE.txt
 */
-  
 
 if ( !get_option('uio_template_selector') ) {
-	update_option( 'uio_template_selector', 'body' );
+    update_option( 'uio_template_selector', 'body' );
 }
 if ( !get_option('uio_toc_selector') ) {
-	update_option( 'uio_toc_selector', '#main' );
+    update_option( 'uio_toc_selector', '#main' );
 }

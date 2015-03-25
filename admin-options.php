@@ -28,8 +28,8 @@ function add_plugin_page()
 // Register the settings and define the form data
 function page_init()
 {        
-  register_setting( 'uio_option_group', 'uio_template_selector', 'sanitize_text_field' );
-  register_setting( 'uio_option_group', 'uio_toc_selector',  'sanitize_text_field' );
+    register_setting( 'uio_option_group', 'uio_template_selector', 'sanitize_text_field' );
+    register_setting( 'uio_option_group', 'uio_toc_selector',  'sanitize_text_field' );
 
     add_settings_section(
         'setting_section_id', // ID
@@ -75,7 +75,7 @@ function uio_toc_selector_callback()
         '<input type="text" id="uio_toc_selector" name="uio_toc_selector" value="%s" />',
           esc_attr( get_option('uio_toc_selector'))
     );
-	printf('<p class="description">A CSS selector specifying where in your pages you\'d like the Table of Contents to appear.</p>');
+    printf('<p class="description">A CSS selector specifying where in your pages you\'d like the Table of Contents to appear.</p>');
 }
 
 function print_section_info()
@@ -88,9 +88,10 @@ function print_section_info()
 // Build the settings page
 function create_admin_page()
 {
+    // the "options.php" file below refers to the WordPress-included file, not the current file
     ?>
     <div class="wrap">
-        <h2>User Interface Options</h2>           
+        <h2>User Interface Options</h2>
         <form method="post" action="options.php">
         <?php
             // This prints out all hidden setting fields
