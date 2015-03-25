@@ -27,7 +27,7 @@ define( 'UIO_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 require_once( UIO_PLUGIN_DIR . 'set-defaults.php' );
 
 if ( is_admin() ) {
-	require_once( UIO_PLUGIN_DIR . 'options.php' );
+	require_once( UIO_PLUGIN_DIR . 'admin-options.php' );
 } else {
 	/**********************************************
 	 * Add necessary files to headers
