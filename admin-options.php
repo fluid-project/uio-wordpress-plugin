@@ -28,8 +28,8 @@ function add_plugin_page()
 // Register the settings and define the form data
 function page_init()
 {        
-  register_setting( 'uio_option_group', 'uio_template_selector' );
-  register_setting( 'uio_option_group', 'uio_toc_selector' );
+  register_setting( 'uio_option_group', 'uio_template_selector', 'sanitize_text_field' );
+  register_setting( 'uio_option_group', 'uio_toc_selector',  'sanitize_text_field' );
 
     add_settings_section(
         'setting_section_id', // ID
@@ -101,18 +101,6 @@ function create_admin_page()
         </form>
     </div>
     <?php
-}
-
-function sanitize( $input )
-{
-    $new_input = array();
-    if( isset( $input['uio_template_selector'] ) )
-        $new_input['uio_template_selector'] = sanitize_text_field( $input['uio_template_selector'] );
-
-    if( isset( $input['uio_toc_selector'] ) )
-        $new_input['uio_toc_selector'] = sanitize_text_field( $input['uio_toc_selector'] );
-
-    return $new_input;
 }
 
 ?>
