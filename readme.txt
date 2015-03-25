@@ -20,9 +20,9 @@ or join the [fluid-work IRC chat room](http://wiki.fluidproject.org/display/flui
 == Installation ==
 
 1. Upload `user-interface-options.zip` to the `/wp-content/plugins/` directory and unpack it.
-1. Activate the plugin through the 'Plugins' menu in WordPress.
-1. Use the User Interface Options Settings page to specify where to insert the UIO panel and the table of contents.
-1. Adjust the CSS of your theme to respond nicely to the changes that UIO makes.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Use the User Interface Options Settings page to specify where to insert the UIO panel and the table of contents.
+4. Adjust the CSS of your theme to respond nicely to the changes that UIO makes.
 
 == Frequently Asked Questions ==
 
@@ -37,7 +37,7 @@ for tips on styling your site to work nicely with UIO.
 
 = Are there any themes themes that already work well with UIO? =
 
-The plugin has been tested with the Miranda theme, which responds very nicely.
+The plugin has been tested with several themes, and we found that the Miranda theme responds very nicely.
 
 == Issue Tracker ==
 

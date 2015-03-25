@@ -64,8 +64,8 @@ function uio_template_selector_callback()
         '<input type="text" id="uio_template_selector" name="uio_template_selector" value="%s" />',
         esc_attr( get_option('uio_template_selector'))
     );
-	printf('<p class="description">A CSS selector specifying where in your pages you\'d like the UI Options templte to be.</p>');
-	printf('<p class="description">IMPORTANT: Don\'t change this value unless you have a very good reason to do so.</p>');
+    printf('<p class="description">A CSS selector specifying where in your pages you\'d like the UI Options templte to be.</p>');
+    printf('<p class="description">IMPORTANT: Don\'t change this value unless you have a very good reason to do so.</p>');
 }
 
 // Display the table of contents selector fields, with explanatory notes
@@ -81,8 +81,8 @@ function uio_toc_selector_callback()
 function print_section_info()
 {
     print '<p>The User Interface Options component needs to add some markup to the pages.
-	You need to specify where, in your theme, this markup should go. The UIO HTML templates
-	will be inserted as the first child of the elements identified by these CSS selectors.</p>';
+    You need to specify where, in your theme, this markup should go. The UIO HTML templates
+    will be inserted as the first child of the elements identified by these CSS selectors.</p>';
 }
 
 // Build the settings page
