@@ -15,7 +15,7 @@ This plugin adds the Infusion User Interface Options (UIO) component to the site
 sliding panel at the top of the page that contains controls which allow visitors to customize the
 presentation of the site to their own personal needs and preferences.
 
-For more information, contact the [Fluid-work mailing list](mailto:fluid-work@fluidproject.org)
+For more information, contact the [Fluid-work mailing list](http://lists.idrc.ocad.ca/mailman/listinfo/fluid-work)
 or join the [fluid-work IRC chat room](http://wiki.fluidproject.org/display/fluid/IRC+Channel).
 
 == Installation ==
