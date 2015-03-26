@@ -88,7 +88,7 @@ function print_section_info()
 // Build the settings page
 function create_admin_page()
 {
-    // the "options.php" file below refers to the WordPress-included file, not the current file
+    // the "options.php" file below refers to the WordPress-included file, not this "admin-options.php" file
     ?>
     <div class="wrap">
         <h2>User Interface Options</h2>
