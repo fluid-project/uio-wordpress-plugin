@@ -1,4 +1,5 @@
 === User Interface Options ===
+
 Contributors: Fluid Project
 Tags: accessibility, personalization
 Requires at least: 4.1.1
