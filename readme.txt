@@ -39,7 +39,13 @@ for tips on styling your site to work nicely with UIO.
 = Are there any themes themes that already work well with UIO? =
 
 The plugin has been tested with several themes, and we found that the Miranda theme responds very nicely.
+The default Twenty Seventeen theme also works fairly well, although some layout tweaks may be required for some preference combinations.
 
 == Issue Tracker ==
 
 http://issues.fluidproject.org/browse/FLOE/component/11510#selectedTab=com.atlassian.jira.plugin.system.project%3Acomponent-issues-panel
+
+== Development ==
+
+See https://wiki.fluidproject.org/display/fluid/UI+Options+Wordpres+Plugin+Development+Guide for information on developing the
+plugin.

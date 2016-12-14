@@ -14,7 +14,7 @@ $(document).ready(function () {
     var tocPlaceholder = "<div class='flc-toc-tocContainer toc'> </div>";
     var uioTemplateSpec = {
         uioTemplate : {
-            href : phpData.pluginUrl + "template.html"
+            href : phpData.pluginUrl + "src/html/template.html"
         }
     };
 
