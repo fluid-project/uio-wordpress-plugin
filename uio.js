@@ -29,8 +29,10 @@ $(document).ready(function () {
 
         // Create the prefs editor
         fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
-            "templatePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/html/",
-            "messagePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/messages/",
+            terms: {
+                "templatePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/html",
+                "messagePrefix": phpData.pluginUrl + "lib/infusion/src/framework/preferences/messages"
+            },
             "tocTemplate": phpData.pluginUrl + "lib/infusion/src/components/tableOfContents/html/TableOfContents.html"
         });
     });

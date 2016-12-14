@@ -1,0 +1,5 @@
+/* set position and z-index to work with Wordpress's twenty seventeen theme */
+.fl-prefsEditor-separatedPanel {
+    position: relative;
+    z-index: 10;
+}
