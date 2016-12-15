@@ -1,36 +1,26 @@
-This version of Infusion was created using a custom build from the master branch:
+Uses the infusion-uiOptions-2.0.0-minified.zip custom Infusion 2.0 build provided on
+the [Infusion 2.0 release page](https://github.com/fluid-project/infusion/releases/tag/infusion-2.0).
 
-https://github.com/fluid-project/infusion/
+The following directories and files were removed from the build, because they are already included in infusion-uiOptions.js file, or are no longer needed:
 
-commit 18939c0dd614901bfc434a29f880aa332600a239
-
-using the command line:
-```
-    grunt custom --source=true --include="uiOptions" --name="uio"
-```
-
-The following directories and files were stripped out of the build, since they contain
-code that is included in the infusion-uio.js file or is not required by this plugin:
-
-* src/lib/infusion/src/components/overviewPanel/js/
-* src/lib/infusion/src/components/overviewPanel/overviewPanelDependencies.json
-* src/lib/infusion/src/components/slidingPanel/
-* src/lib/infusion/src/components/tableOfContents/js/
-* src/lib/infusion/src/components/tableOfContents/tableOfContentsDependencies.json
-* src/lib/infusion/src/components/tabs/
-* src/lib/infusion/src/components/textfieldSlider/
-* src/lib/infusion/src/components/tooltip/
-* src/lib/infusion/src/components/uiOptions/
-* src/lib/infusion/src/framework/core/
-* src/lib/infusion/src/framework/enhancement/
-* src/lib/infusion/src/framework/preferences/js/
-* src/lib/infusion/src/framework/preferences/preferencesDependencies.json
-* src/lib/infusion/src/framework/renderer/
-* src/lib/infusion/src/lib/fastXmlPull/
-* src/lib/infusion/src/lib/jquery/core/
-* src/lib/infusion/src/lib/jquery/plugins/
-* src/lib/infusion/src/lib/jquery/ui/jQueryUICoreDependencies.json
-* src/lib/infusion/src/lib/jquery/ui/jQueryUIWidgetsDependencies.json
-* src/lib/infusion/src/lib/jquery/ui/js/
-* src/lib/infusion/src/lib/json/
+* infusion-uiOptions.js.map
+* src/components/slidingPanel/
+* src/components/tableOfContents/js/
+* src/components/tableOfContents/tableOfContentsDependencies.json
+* src/components/textfieldSlider/
+* src/components/textToSpeech/
+* src/components/uiOptions/
+* src/framework/core/js/
+* src/framework/core/coreDependencies.json
+* src/framework/enhancement/
+* src/framework/preferences/js/
+* src/framework/preferences/preferencesDependencies.json
+* src/framework/renderer/
+* src/lib/fastXmlPull/
+* src/lib/fonts/fontsDependencies.json
+* src/lib/jquery/core/jQueryDependencies.json
+* src/lib/jquery/plugins/touchPunch/jQueryTouchPunchPluginDependencies.json
+* src/lib/jquery/ui/jQueryUIDependencies.json
+* src/lib/normamlize/normalizeDependencies.json
 * README.md
+* ReleaseNotes.md

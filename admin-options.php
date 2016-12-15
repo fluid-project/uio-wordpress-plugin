@@ -9,7 +9,7 @@ Licenses.
 You may obtain a copy of the ECL 2.0 License and BSD License at
 https://github.com/fluid-project/infusion/raw/master/Infusion-LICENSE.txt
 */
- 
+
 add_action( 'admin_menu', 'add_plugin_page' );
 add_action( 'admin_init', 'page_init' );
 
@@ -18,16 +18,16 @@ function add_plugin_page()
 {
     add_options_page(
         'UIO Settings', 
-        'User Interface Options', 
-        'manage_options', 
-        'uio-setting-admin', 
+        'User Interface Options',
+        'manage_options',
+        'uio-setting-admin',
         'create_admin_page'
     );
 }
 
 // Register the settings and define the form data
 function page_init()
-{        
+{
     register_setting( 'uio_option_group', 'uio_template_selector', 'sanitize_text_field' );
     register_setting( 'uio_option_group', 'uio_toc_selector',  'sanitize_text_field' );
 
@@ -36,25 +36,25 @@ function page_init()
         'Settings', // Title
         'print_section_info', // Callback
         'uio-setting-admin' // Page
-    );  
+    );
 
     add_settings_field(
         'uio_template_selector', // ID
         'Where should we put <em>UIO</em>?', // Title
         'uio_template_selector_callback', // Callback
         'uio-setting-admin', // Page
-        'setting_section_id', // Section 
-        array( 'label_for' => 'uio_template_selector' )          
-    );      
+        'setting_section_id', // Section
+        array( 'label_for' => 'uio_template_selector' )
+    );
 
     add_settings_field(
         'uio_toc_selector', // ID
         'Where should we put the <em>Table of Contents</em>?', // Title
         'uio_toc_selector_callback', // Callback
-        'uio-setting-admin', 
+        'uio-setting-admin',
         'setting_section_id',
-        array( 'label_for' => 'uio_toc_selector' )          
-    );      
+        array( 'label_for' => 'uio_toc_selector' )
+    );
 }
 
 // Display the template selector fields, with explanatory notes
@@ -95,9 +95,9 @@ function create_admin_page()
         <form method="post" action="options.php">
         <?php
             // This prints out all hidden setting fields
-            settings_fields( 'uio_option_group' );   
+            settings_fields( 'uio_option_group' );
             do_settings_sections( 'uio-setting-admin' );
-            submit_button(); 
+            submit_button();
         ?>
         </form>
     </div>
