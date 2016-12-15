@@ -24,10 +24,10 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 define( 'UIO_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'UIO_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
-require_once( UIO_PLUGIN_DIR . 'src/php/set-defaults.php' );
+require_once( UIO_PLUGIN_DIR . 'set-defaults.php' );
 
 if ( is_admin() ) {
-    require_once( UIO_PLUGIN_DIR . 'src/php/admin-options.php' );
+    require_once( UIO_PLUGIN_DIR . 'admin-options.php' );
 } else {
-    require_once( UIO_PLUGIN_DIR . 'src/php/inject-dependencies.php' );
+    require_once( UIO_PLUGIN_DIR . 'inject-dependencies.php' );
 }

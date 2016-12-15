@@ -20,11 +20,11 @@ function uio_styles_scripts() {
     wp_enqueue_style( 'Enactors', UIO_PLUGIN_URL . 'lib/infusion/src/framework/preferences/css/Enactors.css' );
     wp_enqueue_style( 'PrefsEditor', UIO_PLUGIN_URL . 'lib/infusion/src/framework/preferences/css/PrefsEditor.css' );
     wp_enqueue_style( 'SeparatedPanelPrefsEditor', UIO_PLUGIN_URL . 'lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css' );
-    wp_enqueue_style( 'uio', UIO_PLUGIN_URL . 'src/css/uio.css' );
+    wp_enqueue_style( 'uio', UIO_PLUGIN_URL . 'uio.css' );
 
     /* Add the JS files to the header */
     wp_enqueue_script( 'infusion', UIO_PLUGIN_URL . 'lib/infusion/infusion-uiOptions.js');
-    wp_enqueue_script( 'uio', UIO_PLUGIN_URL . 'src/js/uio.js');
+    wp_enqueue_script( 'uio', UIO_PLUGIN_URL . 'uio.js');
 
     /* convey PHP data into the JavaScript */
     $php_data = array('pluginUrl' => UIO_PLUGIN_URL);
