@@ -1,5 +1,6 @@
-Uses the infusion-uiOptions-2.0.0-minified.zip custom Infusion 2.0 build provided on
-the [Infusion 2.0 release page](https://github.com/fluid-project/infusion/releases/tag/infusion-2.0).
+The version of Infusion included in this folder was created using a custom build from commit 4612ab559ec9610b5fe22eb43c9af041ced82ab0 of the Infusion master branch https://github.com/fluid-project/infusion/ using the command line:
+
+`grunt custom --source=true --include="uiOptions"`
 
 The following directories and files were removed from the build, because they are already included in infusion-uiOptions.js file, or are no longer needed:
 
