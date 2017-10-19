@@ -9,6 +9,8 @@ The following directories and files were removed from the build, because they ar
 * src/components/tableOfContents/js/
 * src/components/tableOfContents/tableOfContentsDependencies.json
 * src/components/textfieldSlider/
+* src/components/switch/js/
+* src/components/textfieldControl/js/
 * src/components/textToSpeech/
 * src/components/uiOptions/
 * src/framework/core/js/
