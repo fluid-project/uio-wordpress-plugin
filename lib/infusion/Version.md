@@ -11,12 +11,16 @@ The following directories and files were removed from the build, because they ar
 * src/components/textfieldSlider/
 * src/components/switch/js/
 * src/components/switch/css/stylus/
+* src/components/switch/js/switchDependencies.json
 * src/components/textfieldControl/js/
+* src/components/textfieldControl/textfieldConrtolDependencies.json
 * src/components/textToSpeech/
 * src/components/uiOptions/
 * src/framework/core/js/
+* src/framework/core/frameworkDependencies.json
 * src/framework/core/coreDependencies.json
 * src/framework/enhancement/js/
+* src/framework/enhancement/enhancementDependencies.json
 * src/framework/preferences/js/
 * src/framework/preferences/preferencesDependencies.json
 * src/framework/renderer/
