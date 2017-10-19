@@ -1,6 +1,6 @@
 The version of Infusion included in this folder was created using a custom build from commit 4612ab559ec9610b5fe22eb43c9af041ced82ab0 of the Infusion master branch https://github.com/fluid-project/infusion/ using the command line:
 
-`grunt custom --source=true --include="uiOptions"`
+`grunt custom --include="uiOptions" --name="uiOptions`
 
 The following directories and files were removed from the build, because they are already included in infusion-uiOptions.js file, or are no longer needed:
 
