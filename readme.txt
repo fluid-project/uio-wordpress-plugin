@@ -2,12 +2,14 @@
 
 Contributors: Fluid Project
 Tags: accessibility, personalization
-Requires at least: 4.1.1
-Tested up to: 4.1.1
+Requires PHP:
+Requires at least: 4.8
+Stable Version: trunk
+Tested up to: 5.2
 License: New BSD license or the Educational Community License, Version 2.0
 License URI: https://github.com/fluid-project/infusion/raw/master/Infusion-LICENSE.txt
 
-This plugin adds the Infusion User Interface Options component to the site.
+This plugin adds the Infusion User Interface Options component to a site.
 
 == Description ==
 
